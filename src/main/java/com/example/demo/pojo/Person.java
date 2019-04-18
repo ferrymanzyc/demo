@@ -6,20 +6,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "test_List")
-public class Name {
-    private Integer name_id;
-    private String name;
-    private  String role;
-
+@Table(name = "test_list")
+public class Person {
     @Id
     @GeneratedValue
-    public Integer getName_id() {
-        return name_id;
+    private Integer id;
+
+    private String name;
+
+    private  String role;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setName_id(Integer name_id) {
-        this.name_id = name_id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {
