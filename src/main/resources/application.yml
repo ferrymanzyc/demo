@@ -1,13 +1,13 @@
 server:
   port: 8080
-#配置数据源
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:13306/cms_web
     username: root
     password: root
-  #配置SpringMVC视图
+
   mvc:
     view:
       prefix: /WEB-INF/
