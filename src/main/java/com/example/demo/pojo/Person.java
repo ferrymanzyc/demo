@@ -8,14 +8,15 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "test_list")
 public class Person {
-    @Id
-    @GeneratedValue
+
     private Integer id;
 
     private String name;
 
     private  String role;
 
+    @Id
+    @GeneratedValue
     public Integer getId() {
         return id;
     }

@@ -24,7 +24,7 @@ public class PersonController {
     }
 
     @RequestMapping(value = "/save" , method = RequestMethod.POST)
-    public void savePerson(@RequestBody Person person){
+    public @ResponseBody void savePerson(@RequestBody Person person){
         personService.save(person);
     }
 }
