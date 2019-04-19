@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.test;
 
 import com.example.demo.pojo.Human;
 import org.junit.Test;
@@ -8,19 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class DemoApplicationTests {
+public class esTest {
 
-	@Test
-	public void contextLoads() {
-	}
 
-	@Autowired
-	ElasticsearchTemplate elasticsearchTemplate;
-
-	@Test
-	public void test(){
-		elasticsearchTemplate.deleteIndex("humanlist");
-	}
 }
